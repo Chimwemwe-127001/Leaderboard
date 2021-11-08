@@ -21,11 +21,11 @@ Additional description about the project and its features.
 > To get started:
 > clone the repo...
 
-  `git clone https://github.com/Chimwemwe-127001/toDoList.git`
+  `git clone https://github.com/Chimwemwe-127001/Leaderboard.git`
 
 > navigate to repo dir...
 
-  ```cd toDoList```
+  ```cd Leaderboard```
 
 > install project dependencies
 
