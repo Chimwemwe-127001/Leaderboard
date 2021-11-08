@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 1% 14%;
+}
+
+.main-container {
+  margin: 0 1%;
+  justify-content: space-evenly;
+}
+
+.recent-score-section {
+  width: 35%;
+}
+
+#refresh {
+  padding: 5px 9px;
+  border: 1px solid black;
+}
+
+.recent-score-list {
+  border: 2px solid black;
+}
+
+.recent-score-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.recent-score-list ul li{
+  list-style: none;
+  padding: 0.36rem 7px;
+}
+
+.recent-score-list ul li:nth-child(even) {
+  background: rgba(227, 227, 227, 0.836);
+}
+
+.recent-score-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-score-section {
+  width: 25%;
+}
+
+.form {
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 7px 5px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.form #submit {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: fit-content;
+  left: 77.1%;
+  padding: 5px;
+  border: 1px solid black;
+}
