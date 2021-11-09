@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -55,6 +55,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* 2 */
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -164,6 +165,7 @@ module.exports = function (list, options) {
 /* 3 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -239,6 +241,7 @@ module.exports = domAPI;
 /* 4 */
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -283,6 +286,7 @@ module.exports = insertBySelector;
 /* 5 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -300,6 +304,7 @@ module.exports = setAttributesWithoutAttributes;
 /* 6 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -316,6 +321,7 @@ module.exports = insertStyleElement;
 /* 7 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -337,6 +343,7 @@ module.exports = styleTagTransform;
 /* 8 */
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -350,7 +357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.d-flex {\r\n  display: flex;\r\n}\r\n\r\nbutton {\r\n  background: transparent;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.header {\r\n  padding: 1% 14%;\r\n}\r\n\r\n.main-container {\r\n  margin: 0 1%;\r\n  justify-content: space-evenly;\r\n}\r\n\r\n.recent-score-section {\r\n  width: 35%;\r\n}\r\n\r\n#refresh {\r\n  padding: 5px 9px;\r\n  border: 1px solid black;\r\n}\r\n\r\n.recent-score-list {\r\n  border: 2px solid black;\r\n}\r\n\r\n.recent-score-list ul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.recent-score-list ul li{\r\n  list-style: none;\r\n  padding: 0.36rem 7px;\r\n}\r\n\r\n.recent-score-list ul li:nth-child(even) {\r\n  background: rgba(227, 227, 227, 0.836);\r\n}\r\n\r\n.recent-score-header {\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.add-score-section {\r\n  width: 25%;\r\n}\r\n\r\n.form {\r\n  flex-direction: column;\r\n  gap: 20px;\r\n}\r\n\r\ninput {\r\n  padding: 7px 5px;\r\n}\r\n\r\n::placeholder {\r\n  font-style: italic;\r\n}\r\n\r\n.form #submit {\r\n  display: inline-block;\r\n  position: relative;\r\n  text-align: right;\r\n  width: fit-content;\r\n  left: 77.1%;\r\n  padding: 5px;\r\n  border: 1px solid black;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.d-flex {\r\n  display: flex;\r\n}\r\n\r\nbutton {\r\n  background: transparent;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.header {\r\n  padding: 1% 14%;\r\n}\r\n\r\n.main-container {\r\n  margin: 0 1%;\r\n  justify-content: space-evenly;\r\n}\r\n\r\n.recent-score-section {\r\n  width: 35%;\r\n}\r\n\r\n#refresh {\r\n  padding: 5px 9px;\r\n  border: 1px solid black;\r\n}\r\n\r\n.recent-score-list {\r\n  border: 2px solid black;\r\n}\r\n\r\n.recent-score-list ul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.recent-score-list ul li {\r\n  list-style: none;\r\n  padding: 0.36rem 7px;\r\n}\r\n\r\n.recent-score-list ul li:nth-child(even) {\r\n  background: rgba(227, 227, 227, 0.836);\r\n}\r\n\r\np {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.recent-score-header {\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.add-score-section {\r\n  width: 25%;\r\n}\r\n\r\n.form {\r\n  flex-direction: column;\r\n  gap: 20px;\r\n}\r\n\r\ninput {\r\n  padding: 7px 5px;\r\n}\r\n\r\n::placeholder {\r\n  font-style: italic;\r\n}\r\n\r\n.form #submit {\r\n  display: inline-block;\r\n  position: relative;\r\n  text-align: right;\r\n  width: fit-content;\r\n  left: 77.1%;\r\n  padding: 5px;\r\n  border: 1px solid black;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -359,6 +366,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  margin: 0;\r\n  padding: 0
 /* 9 */
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (i) {
@@ -369,6 +377,7 @@ module.exports = function (i) {
 /* 10 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -472,6 +481,47 @@ module.exports = function (cssWithMappingToString) {
   return list;
 };
 
+/***/ }),
+/* 11 */
+/***/ ((__unused_webpack_module, exports) => {
+
+const scores = document.querySelector('.scores');
+const apiEndPoint = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+const idLink = 'zIMj1JOE6iMxjlOSbw36/scores/';
+
+let scoreList = [];
+
+const displayScoreList = () => {
+  if (scoreList.length > 0) {
+    scoreList.forEach((score) => {
+      const scoresTemp = `<li><p>${score.user}: ${score.score}</p></li>`;
+      scores.innerHTML += scoresTemp;
+    });
+  }
+};
+
+const addGameScores = async (data) => {
+  await fetch(`${apiEndPoint}${idLink}`, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+};
+
+const getGameScores = async () => {
+  await fetch(`${apiEndPoint}${idLink}`)
+    .then((res) => res.json())
+    .then((result) => { scoreList = result; });
+};
+
+exports.displayScoreList = displayScoreList;
+exports.getGameScores = getGameScores;
+exports.addGameScores = addGameScores;
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -542,11 +592,34 @@ module.exports = function (cssWithMappingToString) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _leaderboard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
+
+
+(0,_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.displayScoreList)();
+(0,_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.getGameScores)();
+
+const add = document.querySelector('#submit');
+
+add.addEventListener('click', async () => {
+  let name = document.getElementById('name').value;
+  let userscore = document.getElementById('score').value;
+
+  if (name !== '' && userscore !== '') {
+    const data = {
+      user: name,
+      score: userscore,
+    };
+    (0,_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.addGameScores)(data);
+    name = '';
+    userscore = '';
+  }
+});
 })();
 
 /******/ })()
