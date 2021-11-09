@@ -487,17 +487,31 @@ module.exports = function (cssWithMappingToString) {
 
 const scores = document.querySelector('.scores');
 const apiEndPoint = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-const idLink = 'zIMj1JOE6iMxjlOSbw36/scores/';
+const idLink = '5F1bA0Eric6NcV6yjN5Q/scores/';
 
 let scoreList = [];
 
+const getGameScores = async () => {
+  const response = await fetch(`${apiEndPoint}${idLink}`)
+    .then((res) => res.json())
+    .then((result) => result.result)
+    .catch(() => 'error');
+  return response;
+};
+
 const displayScoreList = () => {
-  if (scoreList.length > 0) {
-    scoreList.forEach((score) => {
-      const scoresTemp = `<li><p>${score.user}: ${score.score}</p></li>`;
-      scores.innerHTML += scoresTemp;
-    });
-  }
+  getGameScores().then((res) => {
+    if (typeof res === 'object') {
+      scoreList = Array.from(res);
+      scores.innerHTML = '';
+      if (scoreList.length > 0) {
+        scoreList.forEach((score) => {
+          const scoresTemp = `<li><p>${score.user}: ${score.score}</p></li>`;
+          scores.innerHTML += scoresTemp;
+        });
+      }
+    }
+  });
 };
 
 const addGameScores = async (data) => {
@@ -507,19 +521,10 @@ const addGameScores = async (data) => {
     headers: {
       'Content-type': 'application/json',
     },
-  })
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-};
-
-const getGameScores = async () => {
-  await fetch(`${apiEndPoint}${idLink}`)
-    .then((res) => res.json())
-    .then((result) => { scoreList = result; });
+  }).then((response) => response.json());
 };
 
 exports.displayScoreList = displayScoreList;
-exports.getGameScores = getGameScores;
 exports.addGameScores = addGameScores;
 
 /***/ })
@@ -602,13 +607,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (0,_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.displayScoreList)();
-(0,_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.getGameScores)();
 
-const add = document.querySelector('#submit');
+const form = document.querySelector('.form');
+const refresh = document.getElementById('refresh');
 
-add.addEventListener('click', async () => {
-  let name = document.getElementById('name').value;
-  let userscore = document.getElementById('score').value;
+refresh.addEventListener('click', () => {
+  (0,_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.displayScoreList)();
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const userscore = document.getElementById('score').value;
 
   if (name !== '' && userscore !== '') {
     const data = {
@@ -616,8 +626,7 @@ add.addEventListener('click', async () => {
       score: userscore,
     };
     (0,_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__.addGameScores)(data);
-    name = '';
-    userscore = '';
+    form.reset();
   }
 });
 })();
