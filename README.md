@@ -38,6 +38,8 @@ Additional description about the project and its features.
 
   ```npm start```
 
+> - You can also check out this API documentation [link](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
+
 ## Author
 
 👤 **Chimwemwe Sinyinza**
