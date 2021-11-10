@@ -2,8 +2,7 @@
 
 # Leaderboard
 
-> This project was built for Microverse [under these guidance objectives](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/sneak_peek.md)
-> _note: you can only access this link if you're a Micronault (Microverse Student)_
+> This leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 Additional description about the project and its features.
 
