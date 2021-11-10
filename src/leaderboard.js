@@ -21,6 +21,7 @@ const displayScoreList = () => {
         scoreList.forEach((score) => {
           const scoresTemp = `<li><p>${score.user}: ${score.score}</p></li>`;
           scores.innerHTML += scoresTemp;
+          scoreList.sort((a, b) => Number(a.score) - Number(b.score));
         });
       }
     }
