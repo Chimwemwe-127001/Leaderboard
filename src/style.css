@@ -14,20 +14,19 @@ body {
 }
 
 button {
-  background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   margin: 0;
   border-radius: 24px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 5px 5px 10px #acacac, -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #acacac, -5px -5px 10px #fff;
 }
 
 button:active {
   border-radius: 20px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 5px 5px 9px #9b9b9b, -5px -5px 9px #ffffff;
+  box-shadow: 5px 5px 9px #9b9b9b, -5px -5px 9px #fff;
 }
 
 .header {
@@ -50,7 +49,7 @@ button:active {
 .recent-score-list {
   border-radius: 24px;
   background: #e0e0e0;
-  box-shadow: 5px 5px 10px #acacac, -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #acacac, -5px -5px 10px #fff;
 }
 
 .recent-score-list ul {
