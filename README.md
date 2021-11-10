@@ -2,8 +2,7 @@
 
 # Leaderboard
 
-> This project was built for Microverse [under these guidance objectives](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/sneak_peek.md)
-> _note: you can only access this link if you're a Micronault (Microverse Student)_
+> This leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 Additional description about the project and its features.
 
@@ -38,6 +37,8 @@ Additional description about the project and its features.
 > start project
 
   ```npm start```
+
+> - You can also check out this API documentation [link](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 ## Author
 
