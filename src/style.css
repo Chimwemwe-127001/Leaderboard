@@ -41,6 +41,13 @@ button:active {
 .main-container {
   margin: 1.5% 1%;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.main-container > * {
+  margin: 30px;
+  flex-basis: 37%;
+  flex-grow: 1;
 }
 
 .recent-score-section {
@@ -92,6 +99,7 @@ p {
 }
 
 .add-score-section {
+  max-width: 450px;
   transition: all 800ms ease-in;
   width: 25%;
   height: 40%;
@@ -125,4 +133,18 @@ input:focus {
   align-self: flex-end;
   width: fit-content;
   padding: 7px 13px;
+}
+
+@media (max-width: 768px) {
+  .main-container > * {
+    flex-basis: 50%;
+  }
+
+  .recent-score-section {
+    order: 2;
+  }
+
+  .add-score-section {
+    order: 1;
+  }
 }
