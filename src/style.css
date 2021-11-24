@@ -60,6 +60,8 @@ button:active {
 
 .recent-score-list ul {
   transition: all 800ms ease;
+  display: flex;
+  flex-direction: column-reverse;
   padding: 0;
   margin: 0;
 }
@@ -72,6 +74,11 @@ button:active {
 .recent-score-list ul li:nth-child(even) {
   background: rgba(192, 130, 130, 0.836);
   color: #fff;
+}
+
+.recent-score-list ul li:last-child {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
 p {
